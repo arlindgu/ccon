@@ -14,4 +14,10 @@ func main() {
 
 	h, s, l := cmd.ToHSL([3]uint8{r, g, b})
 	fmt.Printf("H: %f, S: %f, L: %f\n", h, s, l)
+
+	L, c, h, err := cmd.ToOKLCH("CAF31D")
+	if err != nil {
+		fmt.Println(err)
+	}
+	fmt.Printf("H: %f, S: %f, L: %f\n", L, c, h)
 }
