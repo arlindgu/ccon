@@ -36,6 +36,8 @@ ccon ff0000 --hsl
 
 # With # prefix
 ccon "#ff0000" --oklch
+#oklch(0.63, 0.26, 29.22)
+
 ```
 
 ## Supported Formats
